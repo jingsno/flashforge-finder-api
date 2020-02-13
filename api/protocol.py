@@ -5,6 +5,7 @@ from packets import request_temp
 from packets import request_progress
 from packets import request_status
 from packets import change_temperature
+from packets import change_led
 
 from regex_patterns import regex_for_field
 from regex_patterns import regex_for_coordinates
@@ -95,5 +96,14 @@ def set_temperature(printer_address, temp):
 
     send_and_receive(printer_address, request_control_message)
     info_result = send_and_receive(printer_address, change_temperature.format(temp))
+
+    return info_result
+
+
+def set_led(printer_address, red, green, blue):
+    """ Returns printer temp. Both targeted and current. """
+
+    send_and_receive(printer_address, request_control_message)
+    info_result = send_and_receive(printer_address, change_led.format(red, green, blue))
 
     return info_result
