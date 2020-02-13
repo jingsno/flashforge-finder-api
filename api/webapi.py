@@ -44,7 +44,7 @@ def set_temp(ip_address, temp):
     return jsonify(printer_info)
 
 @app.route("/<string:ip_address>/set-light/<string:red>/<string:green>/<string:blue>")
-def set_light(ip_address, temp):
+def set_light(ip_address, red, green, blue):
     printer_info = set_led({'ip': ip_address, 'port': PORT}, red, green, blue)
     return jsonify(printer_info)
 
