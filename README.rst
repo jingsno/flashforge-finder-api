@@ -2,8 +2,10 @@ FlashForge Finder API
 =======================
 
 This is an unofficial interpretation of the FlashForge Finder API.
-It's served with Flask to make it as easy as possible to create your own UI. Original project: https://github.com/01F0/flashforge-finder-api
-I just added the set-temp API call.
+It's served with Flask to make it as easy as possible to create your own UI. 
+Original project: https://github.com/01F0/flashforge-finder-api
+u/Dan MacInerney added the set-temp API call.
+u/johnpdowling added the set-light API call.
 
 Warning
 =======================
