@@ -70,7 +70,7 @@ def get_progress(printer_address):
     printed = regex_groups[0]
     total = regex_groups[1]
 
-    percentage = 0 if total is '0' else int((int(printed) / int(total)) * 100)
+    percentage = 0 if total == '0' else int((int(printed) / int(total)) * 100)
 
     return {'BytesPrinted': printed,
             'BytesTotal': total,
