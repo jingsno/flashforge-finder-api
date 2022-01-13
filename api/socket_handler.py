@@ -1,7 +1,7 @@
 import socket
 
 BUFFER_SIZE = 1024
-TIMEOUT_SECONDS = 30
+TIMEOUT_SECONDS = 15
 
 
 def send_and_receive(printer_adress, message_data):
